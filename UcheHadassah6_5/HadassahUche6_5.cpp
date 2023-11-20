@@ -13,10 +13,18 @@ int main()
 	bool IsValid = true;
 	for (int i = 0; name[i] != '\0'; i++)
 	{
-		if (!isalpha && name[i] != '-' && name[i] != '\'' && name[i] != ' ')
+		if (!isalpha(name[i]) && name[i] != '-' && name[i] != '\'' && name[i] != ' ')
 		{
 			IsValid = false;
 			break;
 		}
+	}
+	if (IsValid)
+	{
+		cout << "It is a valid name!";
+	}
+	else
+	{
+		cout << "It is not a valid name!";
 	}
 }
