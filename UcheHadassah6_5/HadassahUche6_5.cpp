@@ -10,8 +10,13 @@ int main()
 	char name[MAX];
 	cout << "Enter a name:";
 	cin.getline(name, MAX);
+	bool IsValid = true;
 	for (int i = 0; name[i] != '\0'; i++)
 	{
-		
+		if (!isalpha && name[i] != '-' && name[i] != '\'' && name[i] != ' ')
+		{
+			IsValid = false;
+			break;
+		}
 	}
 }
