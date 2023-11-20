@@ -1,6 +1,6 @@
-/*Valid names: Write a program that reads a person’s name and checks if the name is 
-valid or not, printing an appropriate message in each case. A valid name can contain 
-letters (i.e. alphabetic characters), humphens (-), apostrophes (’) and spaces only.*/
+/*Name:Uche Hadassah
+This program reads a person's name and checks if its valid or not. i.e if it has 
+anything other than -,', , and alphabets*/
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -10,10 +10,10 @@ int main()
 	char name[MAX];
 	cout << "Enter a name:";
 	cin.getline(name, MAX);
-	bool IsValid = true;
+	bool IsValid = true;//initialize a bool variable to true
 	for (int i = 0; name[i] != '\0'; i++)
 	{
-		if (!isalpha(name[i]) && name[i] != '-' && name[i] != '\'' && name[i] != ' ')
+		if (!isalpha(name[i]) && name[i] != '-' && name[i] != '\'' && name[i] != ' ')//if it's a character other than these
 		{
 			IsValid = false;
 			break;
