@@ -12,25 +12,6 @@ int main()
 	cin.getline(name, MAX);
 	for (int i = 0; name[i] != '\0'; i++)
 	{
-		if (name[i] != '-' && name[i] != '`' && name[i] != ' ')
-		{
-			cout << name << " is not a valid name";
-			break;
-		}
-		else if(name[i] > 'A' || name[i] < 'z')
-		{ 
-			cout << name << " is not a valid name";
-			break;
-		}
-		else if (name[i] < 'Z' && name[i]>'a')
-		{
-			cout << name << " is not a valid name";
-			break;
-		}
-		else
-		{
-			cout << name << " is a valid name";
-			break;
-		}
+		
 	}
 }
